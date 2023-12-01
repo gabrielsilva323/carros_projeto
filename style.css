@@ -9,7 +9,7 @@
     --cyan:   #006970;
     --dark-cyan: #004241;
     --gray:   #f2f2f2;
-    --transparent-white: rgba(255, 255, 255, 0.75)
+    --transparent-white: rgba(255, 255, 255, 0.75);
 }
 
 body {
@@ -32,7 +32,7 @@ p {
     line-height: 1.5625rem;
 }
 
-a{
+a {
     font-family: 'Lexend Deca', sans-serif;
     display: block;
     text-decoration: none;
@@ -72,4 +72,36 @@ section{
 
 .luxousos a {
     color: var(--dark-cyan);
+}
+
+@media(min-width: 920px) {
+    body {
+        border: 1px solid red;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        display:flex;
+        max-width: 57.5rem;
+    }
+
+    p {
+        margin-bottom: 5.25rem
+    }
+
+    a:hover {
+        background: transparent;
+        color: var(--gray);
+    } 
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxousos {
+        border-radius: 0 8px 8px 0;
+    }
 }
